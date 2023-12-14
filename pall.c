@@ -6,15 +6,18 @@
  * @counter: line_number
  * Return: no return
  */
+
 void f_pall(stack_t **head, unsigned int counter)
 {
-    stack_t *temp = *head;
+	stack_t *h;
+	(void)counter;
 
-    (void)counter;
-
-    while (temp != NULL)
-    {
-        printf("%d\n", temp->n);
-        temp = temp->next;
-    }
+	h = *head;
+	if (h == NULL)
+		return;
+	while (h)
+	{
+		printf("%d\n", h->n);
+		h = h->next;
+	}
 }
