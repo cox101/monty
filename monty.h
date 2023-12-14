@@ -38,8 +38,6 @@ typedef struct instruction_s
         void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
-void handle_error(const char *message, stack_t **head)
 void f_push(stack_t **head, unsigned int counter)
-void f_pall(stack_t **head, unsigned int counter)
 
 #endif
