@@ -8,14 +8,13 @@
  */
 void f_pall(stack_t **head, unsigned int counter)
 {
-    stack_t *current = *head;
+    stack_t *temp = *head;
 
-    (void)counter; // Unused parameter
+    (void)counter;
 
-    while (current != NULL)
+    while (temp != NULL)
     {
-        printf("%d\n", current->n);
-        current = current->next;
+        printf("%d\n", temp->n);
+        temp = temp->next;
     }
 }
-

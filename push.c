@@ -23,6 +23,8 @@ void f_push(stack_t **head, unsigned int counter)
     }
 
     n = atoi(bus.arg);
-    addnode(head, n);
+    if (bus.lifi == 0)
+        addnode(head, n);
+    else
+        addqueue(head, n);
 }
-
